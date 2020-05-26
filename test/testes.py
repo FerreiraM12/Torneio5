@@ -18,6 +18,7 @@ class mapaTest(unittest.TestCase):
         with test_timeout(self, 1):
             m = ['##.6.',
                  '3#6..',
+                 '.####',
                  '.#1#2',
                  '####.']
             self.assertEqual(mapa(m), (3, 1, True, 1))

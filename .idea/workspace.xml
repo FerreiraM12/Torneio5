@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c1bc839-0882-48ba-9a87-ec42aefa2c6c" name="Default Changelist" comment="" />
+    <list default="true" id="6c1bc839-0882-48ba-9a87-ec42aefa2c6c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/marlo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/marlo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mapa.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/mapa.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/testes.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/testes.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,7 +77,7 @@
       <updated>1590401458872</updated>
       <workItem from="1590401479890" duration="18000" />
       <workItem from="1590401713310" duration="708000" />
-      <workItem from="1590402646443" duration="16575000" />
+      <workItem from="1590402646443" duration="29578000" />
     </task>
     <task id="LOCAL-00001" summary="Percorre o mapa e cria lista de ilhas(objetos)">
       <created>1590452201778</created>
@@ -80,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590452201778</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Percorre o mapa e cria lista de ilhas(objetos)">
+      <created>1590452348816</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590452348816</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,55 +101,84 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Percorre o mapa e cria lista de ilhas(objetos)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Percorre o mapa e cria lista de ilhas(objetos)" />
+    <MESSAGE value="Verifica se existe apenas um mar.&#10;Verifica quantas ilhas corretas e quantas incorretas.&#10;65% no codeboard.&#10;Ainda muito incompleto." />
+    <option name="LAST_COMMIT_MESSAGE" value="Verifica se existe apenas um mar.&#10;Verifica quantas ilhas corretas e quantas incorretas.&#10;65% no codeboard.&#10;Ainda muito incompleto." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="393" y="7" key="CommitChangelistDialog2" timestamp="1590452201084">
+    <state x="393" y="7" key="CommitChangelistDialog2" timestamp="1590505597216">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1590452201084" />
+    <state x="393" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1590505597216" />
     <state x="147" y="65" key="DiffContextDialog" timestamp="1590452152175">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="147" y="65" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1590452152175" />
-    <state width="1493" height="229" key="GridCell.Tab.0.bottom" timestamp="1590452071926">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1590505195613">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="229" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590452071926" />
-    <state width="1493" height="229" key="GridCell.Tab.0.center" timestamp="1590452071926">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590505195613" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1590505195613">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="229" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590452071926" />
-    <state width="1493" height="229" key="GridCell.Tab.0.left" timestamp="1590452071926">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590505195613" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1590505195613">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="229" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590452071926" />
-    <state width="1493" height="229" key="GridCell.Tab.0.right" timestamp="1590452071926">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590505195613" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1590505195613">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="229" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590452071926" />
-    <state width="1493" height="229" key="GridCell.Tab.1.bottom" timestamp="1590452071927">
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590505195613" />
+    <state width="1493" height="242" key="GridCell.Tab.1.bottom" timestamp="1590502125332">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="229" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590452071927" />
-    <state width="1493" height="229" key="GridCell.Tab.1.center" timestamp="1590452071927">
+    <state width="1493" height="242" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590502125332" />
+    <state width="1493" height="242" key="GridCell.Tab.1.center" timestamp="1590502125332">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="229" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1590452071927" />
-    <state width="1493" height="229" key="GridCell.Tab.1.left" timestamp="1590452071926">
+    <state width="1493" height="242" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1590502125332" />
+    <state width="1493" height="242" key="GridCell.Tab.1.left" timestamp="1590502125332">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="229" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1590452071926" />
-    <state width="1493" height="229" key="GridCell.Tab.1.right" timestamp="1590452071927">
+    <state width="1493" height="242" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1590502125332" />
+    <state width="1493" height="242" key="GridCell.Tab.1.right" timestamp="1590502125332">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="229" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1590452071927" />
+    <state width="1493" height="242" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1590502125332" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1590452360444">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1590452360444" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1590402675152">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1590402675152" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/mapa.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/mapa.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/mapa.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/mapa.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="156" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="visitados" />
@@ -144,6 +186,6 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Torneio5$main.coverage" NAME="main Coverage Results" MODIFIED="1590452071915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Torneio5$main.coverage" NAME="main Coverage Results" MODIFIED="1590505195587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
 </project>

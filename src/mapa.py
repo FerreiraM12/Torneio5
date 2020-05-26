@@ -36,8 +36,23 @@ def mapa(m):
     global lenx
     leny = len(m)
     lenx = len(m[0])
-    listaIlhas = percorreMapa(m)
-    return
+    lm = percorreMapa(m)  # (mar, listaIlhas)
+    listaIlhas = lm[1]
+    qMar = lm[0]
+    marUnico = initPercorreMar(m, qMar)
+    bemRep = 0
+    malRep = 0
+    for ilha in listaIlhas:
+        if len(ilha.digits) == 1 and ilha.digits[0][0] == len(ilha.pontos):
+            bemRep += 1
+        else:
+            malRep += 1
+    if malRep > 0:
+        alterar = 1
+    else:
+        alterar = 0
+
+    return (bemRep,malRep,marUnico,alterar)
 
 
 class ilha:
@@ -47,16 +62,21 @@ class ilha:
         self.visitados = visitados
 
 
+#  Percorre o mapa, sempre que encontra uma QIlha usa a função initcontaQilha para
+#  criar um objeto ilha e colocar na lista de ilhas. Esta função também devolve quantos QMar existem
 def percorreMapa(m):
     listaDeIlhas = []
     visitados = []
+    qMar = 0
     for y in range(leny):
         for x in range(lenx):
             if not ((y, x) in visitados) and m[y][x] != '#':
                 umaIlha = initcontaQIlha(m, y, x)
                 visitados.extend(umaIlha.visitados)
                 listaDeIlhas.append(umaIlha)
-    return listaDeIlhas
+            if m[y][x] == '#':
+                qMar += 1
+    return qMar, listaDeIlhas
 
 
 def initcontaQIlha(m, y, x):
@@ -110,3 +130,58 @@ def initcontaQIlha(m, y, x):
 
     contaQIlha(m, y, x)
     return ilha(qIlha, digit, visitados)
+
+
+def initPercorreMar(m, mar):
+    x = 0
+    y = 0
+    visitados = []
+    for y in range(leny):
+        for x in range(lenx):
+            if m[y][x] == '#':
+                mar -= 1
+                visitados.append((y, x))
+                break
+            visitados.append((y, x))
+        else:
+            continue
+        break
+
+    def percorreMar(m, y, x):
+        nonlocal mar
+        if 1 <= y <= leny and 0 <= x <= lenx - 1:
+            if m[y - 1][x] == '#' and not ((y - 1, x) in visitados):
+                mar -= 1
+                visitados.append((y - 1, x))
+                percorreMar(m, y - 1, x)
+            elif not ((y - 1, x) in visitados):
+                visitados.append((y - 1, x))
+
+        if - 1 <= y <= leny - 2 and 0 <= x <= lenx - 1:
+            if m[y + 1][x] == '#' and not ((y + 1, x) in visitados):
+                mar -= 1
+                visitados.append((y + 1, x))
+                percorreMar(m, y + 1, x)
+            elif not ((y + 1, x) in visitados):
+                visitados.append((y + 1, x))
+
+        if 0 <= y <= leny - 1 and 1 <= x <= lenx:
+            if m[y][x - 1] == '#' and not ((y, x - 1) in visitados):
+                mar -= 1
+                visitados.append((y, x - 1))
+                percorreMar(m, y, x - 1)
+            elif not ((y, x - 1) in visitados):
+                visitados.append((y, x - 1))
+
+        if 0 <= y <= leny - 1 and -1 <= x <= lenx - 2:
+            if m[y][x + 1] == '#' and not ((y, x + 1) in visitados):
+                mar -= 1
+                visitados.append((y, x + 1))
+                percorreMar(m, y, x + 1)
+            elif not ((y, x + 1) in visitados):
+                visitados.append((y, x + 1))
+
+    percorreMar(m, y, x)
+    if mar > 0:
+        return False
+    return True
